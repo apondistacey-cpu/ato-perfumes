@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ATO Perfumes | Luxury Scents, Affordable Prices</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#ffffff;
+color:#333;
+}
+
+:root{
+--burgundy:#6d0f2b;
+--gold:#d4af37;
+--white:#ffffff;
+}
+
+header{
+background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+url('images/goodgirl.jpg');
+background-size:cover;
+background-position:center;
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+}
+
+.hero{
+color:white;
+max-width:800px;
+}
+
+.hero h1{
+font-size:4rem;
+font-family:'Cormorant Garamond',serif;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:1.2rem;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 30px;
+margin:10px;
+border-radius:50px;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+.btn-primary{
+background:var(--burgundy);
+color:white;
+}
+
+.btn-primary:hover{
+background:#50091f;
+}
+
+.btn-outline{
+border:2px solid white;
+color:white;
+}
+
+.btn-outline:hover{
+background:white;
+color:black;
+}
+
+section{
+padding:80px 10%;
+}
+
+.section-title{
+text-align:center;
+font-size:2.8rem;
+margin-bottom:50px;
+font-family:'Cormorant Garamond',serif;
+color:var(--burgundy);
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:400px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+text-align:center;
+}
+
+.card-content h3{
+color:var(--burgundy);
+margin-bottom:10px;
+}
+
+.why-us{
+background:#faf5f7;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+text-align:center;
+}
+
+.feature{
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.contact{
+background:var(--burgundy);
+color:white;
+}
+
+.contact-container{
+max-width:800px;
+margin:auto;
+}
+
+form{
+display:flex;
+flex-direction:column;
+gap:15px;
+margin-top:30px;
+}
+
+input, textarea{
+padding:15px;
+border:none;
+border-radius:8px;
+font-size:1rem;
+}
+
+textarea{
+height:150px;
+resize:none;
+}
+
+button{
+padding:15px;
+background:var(--gold);
+border:none;
+font-weight:bold;
+cursor:pointer;
+border-radius:8px;
+}
+
+footer{
+background:black;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+.whatsapp{
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+.contact-info{
+text-align:center;
+margin-bottom:30px;
+line-height:2;
+}
+
+.contact-info a{
+color:white;
+text-decoration:none;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.8rem;
+}
+
+.hero p{
+font-size:1rem;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="hero">
+
+<h1>ATO Perfumes</h1>
+
+<p>
+Luxury Inspired Fragrances for Men and Women.
+Smell Expensive. Pay Less.
+</p>
+
+<a href="#products" class="btn btn-primary">Explore Collection</a>
+
+<a href="https://wa.me/254724673679" class="btn btn-outline">
+WhatsApp Us
+</a>
+
+</div>
+
+</header>
+
+<section id="products">
+
+<h2 class="section-title">Featured Fragrances</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="images/goodgirl.jpg" alt="">
+<div class="card-content">
+<h3>Good Girl Inspired</h3>
+<p>Bold, elegant and unforgettable.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="images/prada-candy.jpg" alt="">
+<div class="card-content">
+<h3>Prada Candy Inspired</h3>
+<p>Sweet, playful and luxurious.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="images/only-one.jpg" alt="">
+<div class="card-content">
+<h3>The Only One Inspired</h3>
+<p>Sophisticated and captivating.</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="why-us">
+
+<h2 class="section-title">Why Choose ATO Perfumes?</h2>
+
+<div class="features">
+
+<div class="feature">
+<h3>Long Lasting</h3>
+<p>Premium inspired fragrances with impressive longevity.</p>
+</div>
+
+<div class="feature">
+<h3>Affordable Luxury</h3>
+<p>Luxury scents without luxury pricing.</p>
+</div>
+
+<div class="feature">
+<h3>Fast Delivery</h3>
+<p>Convenient delivery options available.</p>
+</div>
+
+<div class="feature">
+<h3>Customer Focused</h3>
+<p>We help you find your perfect scent.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="contact">
+
+<div class="contact-container">
+
+<h2 class="section-title" style="color:white;">
+Contact ATO Perfumes
+</h2>
+
+<div class="contact-info">
+
+<p>
+📞 <a href="tel:0724673679">0724673679</a>
+</p>
+
+<p>
+📧 <a href="mailto:apondistacey@gmail.com">
+apondistacey@gmail.com
+</a>
+</p>
+
+<p>
+💬 <a href="https://wa.me/254724673679">
+Chat on WhatsApp
+</a>
+</p>
+
+</div>
+
+<form>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Your Email">
+
+<textarea placeholder="Tell us what fragrance you're looking for"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>ATO Perfumes</h3>
+
+<p>
+Luxury Inspired. Confidence Delivered.
+</p>
+
+<p>
+© 2026 ATO Perfumes. All Rights Reserved.
+</p>
+
+</footer>
+
+<a href="https://wa.me/254724673679" class="whatsapp">
+WhatsApp
+</a>
+
+</body>
+</html>
